@@ -2,20 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+#curveImg {
+	border-radius: 73% 27% 70% 30% / 47% 49% 51% 53%;
   }
-}
+  #curveBgImg {
+	border-radius: 15% 85% 70% 30% / 32% 45% 55% 68%;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media only screen and (max-width: 800px) {
+	header .nav-btn {
+		display: inline-block;
+		opacity: 1;
+	}
+
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.4rem;
+		background-color: white;
+		transition: 1s;
+		
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+
+	nav a {
+		font-size: 1.5rem;
+	}
 }
