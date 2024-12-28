@@ -37,8 +37,11 @@ const Services = () => {
             <h1 className='text-2xl font-semibold text-teal-700'>Admissoion</h1>
             <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
-        <button className='bg-teal-500 px-4 py-1.5 font-semibold rounded-md text-white mt-[30px] mb-[60px]'>Read More</button>
         
+    </div>
+    <div className='w-full flex items-center justify-center'>
+
+        <button className='bg-teal-500 px-4 py-1.5 font-semibold   rounded-md text-white mt-[30px] mb-[60px]'>Read More</button>
     </div>
    </div>
    </>
