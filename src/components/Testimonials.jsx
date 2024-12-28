@@ -65,7 +65,7 @@ const Testimonials = () => {
         
     </div>
 
-    <h1 className='text-8xl font-bold text-teal-500 my-[60px] text-center'>Dream . Study . Achieve</h1>
+    <h1 className=' text-4xl md:text-6xl lg:text-8xl font-bold text-teal-500 my-[60px] text-center'>Dream . Study . Achieve</h1>
 
     </div>
     </>

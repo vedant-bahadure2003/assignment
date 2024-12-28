@@ -17,7 +17,7 @@ export default function WhyStudy() {
         </div>
   
         
-        <div className="w-full  mt-8 ">
+        <div className="w-full  mt-8 ml-3">
           <h2 className="text-3xl font-bold text-gray-800">
             Why Study MBBS in <span className="text-teal-500 underline">Uzbekistan?</span>
           </h2>

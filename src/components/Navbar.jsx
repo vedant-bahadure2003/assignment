@@ -1,45 +1,86 @@
-"use client"
-import { FaBars, FaTimes } from "react-icons/fa";
-import Link from 'next/link'
-import { useRef } from "react";
+"use client";
 
-
+import { ImCancelCircle } from "react-icons/im";
+import { CgDetailsMore } from "react-icons/cg";
+import { useState } from "react";
+import Link from "next/link";
 
 function Navbar() {
-  const navRef = useRef();
   
-
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
-  };
-  
-
+  const [open, setOpen] = useState(false);
   return (
-    
-    <div className="w-full h-16 shadow-md sticky top-0 left-0 right-0 z-50 bg-white ">
-      <header className="flex items-center justify-between h-full w-[90%] sm:w-[80%] text-black mx-auto">
-        <Link href="/dashboard">Dashboard</Link>
-        <nav id="navref" className="flex items-center z-50">
-          <Link className="mx-4 text-black hover:text-gray-600  font-semibold text-lg" href="/">
-            Home
-          </Link>
-          <Link className=" mx-4 text-black hover:text-gray-600  font-semibold text-lg" href="/about">
-            About
-          </Link>
-          <Link className=" mx-4 text-black hover:text-gray-600 text-lg font-semibold " href="/tours">
-            Tours
-          </Link>
-        
+    <nav className="bg-white h-[10vh] text-black flex relative">
+      <div className="flex justify-between gap-4 items-center w-full md:px-12 px-2">
+        <h1 className="text-xl font-bold">Uzbekistan Medi</h1>
 
-          <button className="nav-btn nav-close-btn md:hidden" onClick={showNavbar}>
-            <FaTimes />
-          </button>
-        </nav>
-        <button className="nav-btn md:hidden" onClick={showNavbar}>
-          <FaBars />
-        </button>
-      </header>
-    </div>
+        <div className="md:hidden">
+          {open ? (
+            <ImCancelCircle
+              className="text-2xl"
+              onClick={() => setOpen((preState) => !preState)}
+            />
+          ) : (
+            <CgDetailsMore
+              className="text-2xl"
+              onClick={() => setOpen((preState) => !preState)}
+            />
+          )}
+        </div>
+
+        <ul className="gap-5 font-semibold md:flex hidden">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/">About</Link>
+          </li>
+          <li>
+            <Link href="/">MBBS in Uzbekistan </Link>
+          </li>
+          <li>
+            <Link href="/">Universities </Link>
+          </li>
+          <li>
+            <Link href="/">Blogs </Link>
+          </li>
+          <li>
+            <Link href="/">Gallery </Link>
+          </li>
+          <li>
+            <Link href="/">Contact Us </Link>
+          </li>
+        </ul>
+
+       
+        <ul
+          className={`absolute top-[calc(100%+0vh)] w-full text-center bg-white leading-9 font-semibold z-50 md:hidden ${
+            open ? "left-0" : "left-[-100%] "
+          } duration-700`}
+        >
+          <li onClick={() => setOpen(false)}>
+            <Link href="/">Home</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link href="/">About</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link href="/">MBBS in Uzbekistan</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link href="/">Universities</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link href="/">Blogs</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link href="/">Gallery</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link href="/">Contact Us</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 }
 
