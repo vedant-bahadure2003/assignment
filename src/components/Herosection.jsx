@@ -44,31 +44,31 @@ const Herosection = () => {
           </div>
 
         </div>
-          <div className="lg:h-[15vh] h-fit bg-[#fffbef] relative">
+          <div className="lg:h-[15vh] h-fit bg-[#fffbef] relative md:flex md:flex-row-reverse md:items-center md:justify-between">
 
             <Image
             src={doctor}
             alt="img"
             className="xl:h-[70vh] h-[250px] object-contain md:h-[300px] lg:h-[400px]  lg:w-fit  lg:absolute lg:bottom-[100%] xl:bottom-0 lg:right-0 " 
             />
-            <div className=" w-[90%] mx-auto h-full flex flex-wrap items-center lg:justify-start justify-center gap-4">
+            <div className=" w-[90%] mx-auto h-full flex flex-wrap items-center lg:justify-start justify-center gap-4 ">
                 <div className="  lg:border-r-2 border-black px-5 flex flex-col items-center justify-center gap-2">
-                    <h1 className="text-4xl text-black font-extrabold">12+</h1>
-                    <p className="font-semibold">Years of Experience</p>
+                    <h1 className="text-3xl lg:text-4xl text-black font-extrabold">12+</h1>
+                    <p className="font-semibold text-sm lg:text-base">Years of Experience</p>
                 </div>
                 <div className=" lg:border-r-2 border-black px-5 flex flex-col items-center justify-center gap-2">
-                    <h1 className="text-4xl text-black font-extrabold">1000+</h1>
-                    <p className="font-semibold">Satisfied students
+                    <h1 className="text-3xl lg:text-4xl text-black font-extrabold">1000+</h1>
+                    <p className="font-semibold text-sm lg:text-base">Satisfied students
                     counselled</p>
                 </div>
                 <div className=" lg:border-r-2 border-black px-5 flex flex-col items-center justify-center gap-2">
-                    <h1 className="text-4xl text-black font-extrabold">10+</h1>
-                    <p className="font-semibold">Universities
+                    <h1 className="text-3xl lg:text-4xl text-black font-extrabold">10+</h1>
+                    <p className="font-semibold text-sm lg:text-base">Universities
                     affiliated with us!</p>
                 </div>
                 <div className=" px-5 flex flex-col items-center justify-center gap-2">
-                    <h1 className="text-4xl text-black font-extrabold">100+</h1>
-                    <p className="font-semibold">Vice Assitance</p>
+                    <h1 className="text-3xl lg:text-4xl text-black font-extrabold">100+</h1>
+                    <p className="font-semibold text-sm lg:text-base">Vice Assitance</p>
                 </div>
             </div>
 
