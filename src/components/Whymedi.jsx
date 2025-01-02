@@ -1,10 +1,12 @@
+import Image from 'next/image';
 import React from 'react'
 import { PiArrowCircleUpRight } from "react-icons/pi";
+import groupimg from "../../public/Images/groupmedi.png";
 
 const Whymedi = () => {
     return (
         <>
-            <div className='w-full h-auto mt-[100px] flex items-center justify-center'>
+            <div className='w-full h-auto mt-[50px] flex items-center justify-center'>
                 <div className='w-[90%] mx-auto h-auto flex flex-col lg:flex-row'>
                     <div className='w-full lg:w-[50%] h-auto'>
                         <div className='w-[90%] lg:w-[75%] h-full mx-auto flex flex-col gap-8 justify-center py-8'>
@@ -27,8 +29,8 @@ const Whymedi = () => {
                         </div>
                     </div>
                     <div className='w-full lg:w-[40%] h-auto flex items-center justify-center relative py-8'>
-                        <img id='curveImg' className='z-10 object-cover w-[250px] sm:w-[350px] lg:w-[400px] h-[250px] sm:h-[350px] lg:h-[400px]' src="https://plus.unsplash.com/premium_photo-1681843126728-04eab730febe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                        <img id='curveBgImg' className='absolute bg-teal-500 object-cover w-[250px] sm:w-[350px] lg:w-[400px] h-[250px] sm:h-[350px] lg:h-[400px]' src="" alt="" />
+                        <Image  className='z-10 object-cover w-[250px] sm:w-[350px] lg:w-[400px] h-[250px] sm:h-[350px] lg:h-[400px]' src={groupimg} alt="" />
+                        
                         
                     </div>
                 </div>

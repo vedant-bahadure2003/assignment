@@ -10,6 +10,7 @@ const Card = () => {
             <Image
             src={collegeImg}
             className=''
+            alt="college image"
             />
         </div>
         <div className='p-3'>

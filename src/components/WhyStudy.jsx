@@ -3,7 +3,7 @@ import DoctorImg from "../../public/Images/doctor.png";
 
 export default function WhyStudy() {
     return (
-      <section className="bg-white flex items-center justify-between gap-16 flex-wrap md:flex-nowrap mt-[50px]">
+      <section className="bg-white flex items-center justify-between gap-16 flex-wrap md:flex-nowrap mt-[30px]">
         
         <div className="relative w-[750px] overflow-hidden ">
           <div className="absolute bg-teal-500 w-full h-full top-12 left-0 z-0 rounded-tr-full rounded-br-full
@@ -17,7 +17,7 @@ export default function WhyStudy() {
         </div>
   
         
-        <div className="w-full  mt-8 ml-3">
+        <div className="w-full  mt-5 ml-3">
           <h2 className="text-3xl font-bold text-gray-800">
             Why Study MBBS in <span className="text-teal-500 underline">Uzbekistan?</span>
           </h2>

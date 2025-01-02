@@ -4,12 +4,8 @@ import React from "react";
 import Image from "next/image";
 import { CiCircleMinus } from "react-icons/ci";
 import { CiCirclePlus } from "react-icons/ci";
-
 import { useState } from "react";
-
-
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-
 
 export default function Accordion(props) {
   const [animationParent] = useAutoAnimate();

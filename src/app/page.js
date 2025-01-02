@@ -1,4 +1,5 @@
 import Blog from "@/components/Blog";
+import Contactus from "@/components/Contactus";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Galary from "@/components/Galary";
@@ -27,8 +28,11 @@ export default function Home() {
    <Blog/>
    <Galary/>
    <Faq/>
-   <HorizontalBox/>
+   <div className="relative">
+
+   <Contactus/>
    <Footer/>
+   </div>
   
    </>
   );

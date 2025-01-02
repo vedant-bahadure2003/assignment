@@ -27,7 +27,7 @@ function Navbar() {
           )}
         </div>
 
-        <ul className="gap-5 font-semibold lg:flex hidden">
+        <ul className="gap-5 font-semibold lg:flex hidden ">
           <li>
             <Link href="/">Home</Link>
           </li>

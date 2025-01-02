@@ -2,6 +2,11 @@ import Image from "next/image";
 import React from "react";
 import collegeImg from "../../public/Images/cambridge.jpeg";
 import doctor from "../../public/Images/doctor.png";
+import Link from "next/link";
+import x from "../../public/Images/1.png"
+import facebook from "../../public/Images/2.png";
+import insta from "../../public/Images/3.png";
+import linkdin from "../../public/Images/4.png";
 const Herosection = () => {
   return (
     <>
@@ -17,7 +22,7 @@ const Herosection = () => {
           <div className="absolute top-[10%] sm:left-[25%] md:left-[30%] left-[10%] lg:left-[17%]  flex flex-col items-center justify-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl text-white font-bold text-center my-4">
               Study <span className="text-teal-400">MBBS</span> At
-              <span className="text-teal-400">Uzbekistan's</span> <br /> Leading
+              <span className="text-teal-400"> Uzbekistan's</span> <br /> Leading
               Univercities
             </h1>
             <button className="bg-teal-500 mt-4 lg:mt-7 lg:px-5 lg:py-2 px-3 py-1.5 font-semibold rounded-md text-white">
@@ -41,6 +46,36 @@ const Herosection = () => {
                 </li>
               ))}
             </ul>
+          </div>
+
+          <div className="absolute left-[-4%] top-[40%]  -rotate-90">
+            <button className="bg-teal-500 mt-4 lg:mt-7 lg:px-5 lg:py-2 px-3 py-1.5 font-semibold rounded-br-md rounded-bl-md text-white transform "> Apply Now</button>
+          </div>
+          <div className="absolute right-0 top-[40%] z-20 bg-white p-[10px] flex flex-col gap-3 rounded-tl-md rounded-bl-md items-center">
+            <Link href="/">
+            <Image
+            src={x}
+            alt="x"
+            />
+            </Link>
+            <Link href="/">
+            <Image
+            src={facebook}
+            alt="x"
+            />
+            </Link>
+            <Link href="/">
+            <Image
+            src={insta}
+            alt="x"
+            />
+            </Link>
+            <Link href="/">
+            <Image
+            src={linkdin}
+            alt="x"
+            />
+            </Link>
           </div>
 
         </div>
