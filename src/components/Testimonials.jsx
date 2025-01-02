@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Face from "../../public/Images/face.jpg";
 import stars from "../../public/Images/groupstar.png";
-
+import textimg from "../../public/Images/Dream. Study. Achieve..png"
 const Testimonials = () => {
   return (
     <>
@@ -40,9 +40,12 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-teal-500 my-[60px] text-center">
-          Dream . Study . Achieve
-        </h1>
+       
+        <Image
+        src={textimg}
+        alt="textimg"
+        className="w-[100%] mt-16"
+        />
       </div>
     </>
   );

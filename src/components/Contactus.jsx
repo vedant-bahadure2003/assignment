@@ -1,5 +1,4 @@
-import Image from "next/image"
-import contactimg from "../../public/Images/contactimg.png"
+
 
 const Contactus = () => {
   return (

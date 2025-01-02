@@ -56,7 +56,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <hr className="w-full md:w-[85%] border-t-2 border-black mt-8" />
+                <hr className="w-full md:w-[85%] border-r-2 border-[#005D61] mt-8" />
             </div>
         </>
     );

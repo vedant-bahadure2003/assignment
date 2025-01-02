@@ -4,7 +4,6 @@ import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Galary from "@/components/Galary";
 import Herosection from "@/components/Herosection";
-import HorizontalBox from "@/components/HorizontalBox";
 import Navbar from "@/components/Navbar";
 import Partner from "@/components/Partner";
 import Services from "@/components/Services";

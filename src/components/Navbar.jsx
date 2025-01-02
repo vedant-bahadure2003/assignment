@@ -1,87 +1,83 @@
-"use client";
+'use client'
+import Link from 'next/link';
+import React, { useState } from 'react';
+import { IoMdMenu } from "react-icons/io";
 
-import { ImCancelCircle } from "react-icons/im";
-import { CgDetailsMore } from "react-icons/cg";
-import { useState } from "react";
-import Link from "next/link";
+const Navbar = () => {
+    const [display, setDisplay] = useState(false);
+    return (
+        <>
+            {/* Navbar */}
+            <div className="w-full  bg-[#00000080] backdrop-blur-md fixed top-0 left-0 z-50 "> 
+                <div className="w-[90%]  md:w-[80%] mx-auto flex flex-wrap justify-between items-center py-4 md:py-6">
+                    <h1 className="text-[16px] md:text-3xl font-bold text-white">Uzbekistan <br /> Medi</h1>
+                    <div className="xl:hidden flex items-center gap-2">
+                        
+                        <button className='inline-block text-base py-1 px-3 bg-teal-500 text-white rounded-md'>Apply Now</button>
+                    
+                        <IoMdMenu
+                            className="text-white text-2xl cursor-pointer inline-block"
+                            onClick={() => setDisplay(!display)}
+                        />
+                    </div>
+                    {display ? (
+                        <div className="xl:hidden w-[70%] sm:mt-4 bg-[#ffffff]  absolute top-0 left-0  h-[100vh] z-40 font-semibold">
+                            <div className='flex flex-col justify-start gap-3 ml-3 mt-5'>
+                                <Link href="#">
+                                    <h1 className=" text-3xl md:text-lg text-black ">Uzbekistan Medi</h1>
+                                </Link>
+                                <Link href="#">
+                                    <h1 className=" text-xl md:text-lg text-black hover:text-[#45f6ff] cursor-pointer">Home</h1>
+                                </Link>
+                                <Link href="#">
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">About</h1>
+                                </Link>
+                                <Link href="#">
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">MBBS in Uzbekistan</h1>
+                                </Link>
+                                <Link href="#">
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">Universities</h1>
+                                </Link>
+                                <Link href="#">
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">Blogs</h1>
+                                </Link>
+                                <Link href="#">
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">Gallery</h1>
+                                </Link>
+                                <Link href="#">
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">Contact Us</h1>
+                                </Link>
+                            </div>
+                        </div>
+                    ) : null}
 
-function Navbar() {
-  
-  const [open, setOpen] = useState(false);
-  return (
-    <nav className="bg-white h-[10vh] text-black flex relative">
-      <div className="flex justify-between gap-4 items-center w-full lg:px-12 px-2">
-        <h1 className="text-xl font-bold">Uzbekistan Medi</h1>
-
-        <div className="lg:hidden">
-          {open ? (
-            <ImCancelCircle
-              className="text-2xl"
-              onClick={() => setOpen((preState) => !preState)}
-            />
-          ) : (
-            <CgDetailsMore
-              className="text-2xl"
-              onClick={() => setOpen((preState) => !preState)}
-            />
-          )}
-        </div>
-
-        <ul className="gap-5 font-semibold lg:flex hidden ">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/">About</Link>
-          </li>
-          <li>
-            <Link href="/">MBBS in Uzbekistan </Link>
-          </li>
-          <li>
-            <Link href="/">Universities </Link>
-          </li>
-          <li>
-            <Link href="/">Blogs </Link>
-          </li>
-          <li>
-            <Link href="/">Gallery </Link>
-          </li>
-          <li>
-            <Link href="/">Contact Us </Link>
-          </li>
-        </ul>
-
-       
-        <ul
-          className={`absolute top-[calc(100%+0vh)] w-full text-center bg-white leading-9 font-semibold z-50 lg:hidden ${
-            open ? "left-0" : "left-[-100%] "
-          } duration-700`}
-        >
-          <li onClick={() => setOpen(false)}>
-            <Link href="/">Home</Link>
-          </li>
-          <li onClick={() => setOpen(false)}>
-            <Link href="/">About</Link>
-          </li>
-          <li onClick={() => setOpen(false)}>
-            <Link href="/">MBBS in Uzbekistan</Link>
-          </li>
-          <li onClick={() => setOpen(false)}>
-            <Link href="/">Universities</Link>
-          </li>
-          <li onClick={() => setOpen(false)}>
-            <Link href="/">Blogs</Link>
-          </li>
-          <li onClick={() => setOpen(false)}>
-            <Link href="/">Gallery</Link>
-          </li>
-          <li onClick={() => setOpen(false)}>
-            <Link href="/">Contact Us</Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
-}
+                    <div className="hidden xl:flex flex-wrap gap-4 md:gap-6 mt-2 lg:mt-0">
+                        <Link href="#">
+                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">Home</h1>
+                        </Link>
+                        <Link href="#">
+                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">About</h1>
+                        </Link>
+                        <Link href="#">
+                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">MBBS in Uzbekistan</h1>
+                        </Link>
+                        <Link href="#">
+                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">Universities</h1>
+                        </Link>
+                        <Link href="#">
+                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">Blogs</h1>
+                        </Link>
+                        <Link href="#">
+                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">Gallery</h1>
+                        </Link>
+                        <Link href="#">
+                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">Contact Us</h1>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+};
 
 export default Navbar;

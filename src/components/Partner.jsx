@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "../../public/Images/logo.png";
 import universityimg1 from "../../public/Images/universityimg1.png";
 import universityimg2 from "../../public/Images/universityimg2.png";
 import universityimg3 from "../../public/Images/universityimg3.png";
