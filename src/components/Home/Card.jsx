@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Universityimg from '../../public/Images/universityimg.png'
+import Universityimg from '../../../public/Images/universityimg.png'
 
 const Card = () => {
   return (

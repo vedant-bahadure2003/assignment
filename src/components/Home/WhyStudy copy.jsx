@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { PiArrowCircleUpRight } from "react-icons/pi";
-import DoctorImg from "../../public/Images/groupwhystudy.png";
-import rightsign from "../../public/Images/rightsign.png";
+import DoctorImg from "../../../public/Images/groupwhystudy.png";
+import rightsign from "../../../public/Images/rightsign.png";
 
 const WhyStudy = () => {
   return (

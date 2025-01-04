@@ -1,12 +1,12 @@
 import Image from "next/image";
-import doctor from "../../public/Images/doctor.png";
-import rightsign from "../../public/Images/rightsign.png";
-import bgImage from "../../public/Images/bgImage.png";
-import mobileheroimg from "../../public/Images/mobileheroimg.png";
-import mobilehero1 from "../../public/Images/mobilehero1.png";
-import mobilehero2 from "../../public/Images/mobilehero2.png";
-import mobilehero3 from "../../public/Images/mobilehero3.png";
-import mobilehero4 from "../../public/Images/mobilehero4.png";
+import doctor from "../../../public/Images/doctor.png";
+import rightsign from "../../../public/Images/rightsign.png";
+import bgImage from "../../../public/Images/bgImage.png";
+import mobileheroimg from "../../../public/Images/mobileheroimg.png";
+import mobilehero1 from "../../../public/Images/mobilehero1.png";
+import mobilehero2 from "../../../public/Images/mobilehero2.png";
+import mobilehero3 from "../../../public/Images/mobilehero3.png";
+import mobilehero4 from "../../../public/Images/mobilehero4.png";
 const Herosection = () => {
   return (
     <>

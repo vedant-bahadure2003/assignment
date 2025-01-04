@@ -1,6 +1,6 @@
 'use client';
 import { useState, useRef } from "react";
-import { blogData } from "../app/blogdata.js";
+import { blogData } from "../../app/blogdata.js";
 import { IoIosArrowForward } from "react-icons/io";
 
 const Blog = () => {

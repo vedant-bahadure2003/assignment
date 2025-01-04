@@ -1,11 +1,11 @@
 import React from "react";
-import admissionimg from "../../public/Images/admissionimg.png";
-import accomadationimg from "../../public/Images/accomadationimg.png";
-import visaimg from "../../public/Images/visaimg.png";
-import pickupimg from "../../public/Images/pickupimg.png";
+import admissionimg from "../../../public/Images/admissionimg.png";
+import accomadationimg from "../../../public/Images/accomadationimg.png";
+import visaimg from "../../../public/Images/visaimg.png";
+import pickupimg from "../../../public/Images/pickupimg.png";
 import Image from "next/image";
-import documentImg from "../../public/Images/documentimg.png";
-import counselingimg from "../../public/Images/counselingimg.png";
+import documentImg from "../../../public/Images/documentimg.png";
+import counselingimg from "../../../public/Images/counselingimg.png";
 const Services = () => {
   return (
     <>

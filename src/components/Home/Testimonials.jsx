@@ -1,9 +1,9 @@
 'use client'
 import Image from "next/image";
 import React, { useRef } from "react";
-import Face from "../../public/Images/face.jpg";
-import stars from "../../public/Images/groupstar.png";
-import textimg from "../../public/Images/Dream. Study. Achieve..png";
+import Face from "../../../public/Images/face.jpg";
+import stars from "../../../public/Images/groupstar.png";
+import textimg from "../../../public/Images/Dream. Study. Achieve..png";
 import { IoIosArrowForward } from "react-icons/io";
 
 const Testimonials = () => {

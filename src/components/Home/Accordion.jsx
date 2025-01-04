@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import { CiCircleMinus, CiCirclePlus } from "react-icons/ci";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-import Minus from "../../public/Images/minus.png";
-import Plus from "../../public/Images/plus.png";
+import Minus from "../../../public/Images/minus.png";
+import Plus from "../../../public/Images/plus.png";
 import Image from "next/image";
 
 export default function Accordion({ question, answer, isOpen, onToggle }) {

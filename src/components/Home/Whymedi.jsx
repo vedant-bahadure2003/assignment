@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 import { PiArrowCircleUpRight } from "react-icons/pi";
-import groupimg from "../../public/Images/groupmedi.png";
+import groupimg from "../../../public/Images/groupmedi.png";
 
 const Whymedi = () => {
     return (

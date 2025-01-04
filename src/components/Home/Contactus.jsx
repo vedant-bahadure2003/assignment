@@ -1,5 +1,5 @@
 import Image from "next/image";
-import formBgImg from '../../public/Images/formBgImg.png'
+import formBgImg from '../../../public/Images/formBgImg.png'
 
 const ContactUs = () => {
     return (

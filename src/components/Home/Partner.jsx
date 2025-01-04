@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import universityimg1 from "../../public/Images/universityimg1.png";
-import universityimg2 from "../../public/Images/universityimg2.png";
-import universityimg3 from "../../public/Images/universityimg3.png";
-import universityimg4 from "../../public/Images/universityimg4.png";
+import universityimg1 from "../../../public/Images/universityimg1.png";
+import universityimg2 from "../../../public/Images/universityimg2.png";
+import universityimg3 from "../../../public/Images/universityimg3.png";
+import universityimg4 from "../../../public/Images/universityimg4.png";
 
 const Partner = () => {
   return (

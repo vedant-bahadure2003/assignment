@@ -3,9 +3,9 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { IoIosArrowDroprightCircle, IoIosArrowForward } from "react-icons/io";
-import gallaryimg1 from "../../public/Images/galleryimg1.png";
-import gallaryimg2 from "../../public/Images/gallaryimg2.png";
-import gallaryimg3 from "../../public/Images/gallaryimg3.png";
+import gallaryimg1 from "../../../public/Images/galleryimg1.png";
+import gallaryimg2 from "../../../public/Images/gallaryimg2.png";
+import gallaryimg3 from "../../../public/Images/gallaryimg3.png";
 
 const Galary = () => {
   const galleryRef = useRef(null);

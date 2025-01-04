@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
-import Accordion from './Accordion';
-import { faqs } from "../app/data";
+import Accordion from './Accordion.jsx';
+import { faqs } from "../../app/data.js";
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);

@@ -1,22 +1,22 @@
-import Blog from "@/components/Blog";
-import Contactus from "@/components/Contactus";
-import Faq from "@/components/Faq";
+import Blog from "@/components/Home/Blog";
+import Contactus from "@/components/Home/Contactus";
+import Faq from "@/components/Home/Faq";
 import Footer from "@/components/Footer";
-import Galary from "@/components/Galary";
-import Herosection from "@/components/Herosection";
+import Galary from "@/components/Home/Galary";
+import Herosection from "@/components/Home/Herosection";
 import Navbar from "@/components/Navbar";
-import Partner from "@/components/Partner";
-import Services from "@/components/Services";
-import Testimonials from "@/components/Testimonials";
-import Univercity from "@/components/Univercity";
-import Whymedi from "@/components/Whymedi";
-import WhyStudy from "@/components/WhyStudy";
+import Partner from "@/components/Home/Partner";
+import Services from "@/components/Home/Services";
+import Testimonials from "@/components/Home/Testimonials";
+import Univercity from "@/components/Home/Univercity";
+import Whymedi from "@/components/Home/Whymedi";
+import WhyStudy from "@/components/Home/WhyStudy";
 
 
 export default function Home() {
   return (
    <>
-   <Navbar/>
+  
    <Herosection/>
    <WhyStudy/>
    <Univercity/>
@@ -30,7 +30,7 @@ export default function Home() {
    
 
    <Contactus/>
-   <Footer/>
+  
    
   
    </>
