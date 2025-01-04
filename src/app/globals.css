@@ -2,48 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-
-#curveImg {
-	border-radius: 73% 27% 70% 30% / 47% 49% 51% 53%;
-  }
-  #curveBgImg {
-	border-radius: 15% 85% 70% 30% / 32% 45% 55% 68%;
-  }
-
-@media only screen and (max-width: 800px) {
-	header .nav-btn {
-		display: inline-block;
-		opacity: 1;
-	}
-
-	header nav {
-		position: fixed;
-		top: -100vh;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 0.4rem;
-		background-color: white;
-		transition: 1s;
-		
-	}
-
-	header .responsive_nav {
-		transform: translateY(100vh);
-	}
-
-	nav .nav-close-btn {
-		position: absolute;
-		top: 2rem;
-		right: 2rem;
-	}
-
-
-	nav a {
-		font-size: 1.5rem;
-	}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html, body, label {
+  font-family: 'Roboto', sans-serif;
 }
+.headfont{
+	font-family: 'Montserrat';
+}
+.animate-scroll {
+	display: flex;
+	animation: scroll 5s linear infinite;
+  }
+
+  @keyframes scroll {
+	from {
+	  transform: translateX(0%);
+	}
+	to {
+	  transform: translateX(-50%);
+	}
+  }

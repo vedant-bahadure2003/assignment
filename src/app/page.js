@@ -27,11 +27,11 @@ export default function Home() {
    <Blog/>
    <Galary/>
    <Faq/>
-   <div className="relative">
+   
 
    <Contactus/>
    <Footer/>
-   </div>
+   
   
    </>
   );

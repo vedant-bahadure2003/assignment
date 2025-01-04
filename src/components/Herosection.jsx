@@ -30,7 +30,7 @@ const Herosection = () => {
         <div className="absolute top-[120px]  w-full h-[100vh]  xl:mt-0 z-10">
           <div className="w-[80%] mx-auto h-full flex flex-col items-stretch gap-2 md:gap-7">
             <div className="w-[90%] mx-auto h-auto flex items-center justify-center flex-col text-center">
-              <h1 className="text-4xl md:text-6xl lg:text-[64px] mt-3 font-semibold text-white w-full">
+              <h1 id="headfont" className="text-4xl md:text-6xl lg:text-[64px] mt-3 font-semibold  text-white w-full">
                 Study <span className="text-[#13e0eb]">MBBS</span> At{" "}
                 <span className="text-[#13e0eb]">Uzbekistan's</span>{" "}
                 <br className="hidden md:block" /> Leading Universities
@@ -111,7 +111,7 @@ const Herosection = () => {
         </div>
       </div>
 
-      <div className="relative w-full h-[68vh] overflow-hidden">
+      <div className="relative w-full md:hidden h-[68vh] overflow-hidden">
         <Image
           src={mobileheroimg}
           alt="mobileheroimg"
@@ -161,7 +161,7 @@ const Herosection = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#FFFBEF] h-[110px] overflow-x-scroll overflow-y-hidden scrollbar-hide">
+      <div className="bg-[#FFFBEF] h-[110px] overflow-x-scroll overflow-y-hidden scrollbar-hide md:hidden">
   <div className="flex gap-6 items-center justify-start w-[90%] mx-auto">
     <div className="p-2 flex flex-col items-center justify-center">
       <p className="font-bold text-[32px]">12+</p>

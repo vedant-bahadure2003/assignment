@@ -10,7 +10,7 @@ const Navbar = () => {
             {/* Navbar */}
             <div className="w-full  bg-[#00000080] backdrop-blur-md fixed top-0 left-0 z-50 "> 
                 <div className="w-[90%]  md:w-[80%] mx-auto flex flex-wrap justify-between items-center py-4 md:py-6">
-                    <h1 className="text-[16px] md:text-3xl font-bold text-white">Uzbekistan <br /> Medi</h1>
+                    <h1 className="text-[16px] md:text-3xl font-bold text-white">Uzbekistan <br className='md:hidden' /> Medi</h1>
                     <div className="xl:hidden flex items-center gap-2">
                         
                         <button className='inline-block text-base py-1 px-3 bg-teal-500 text-white rounded-md'>Apply Now</button>
@@ -24,7 +24,7 @@ const Navbar = () => {
                         <div className="xl:hidden w-[70%] sm:mt-4 bg-[#ffffff]  absolute top-0 left-0  h-[100vh] z-40 font-semibold">
                             <div className='flex flex-col justify-start gap-3 ml-3 mt-5'>
                                 <Link href="#">
-                                    <h1 className=" text-3xl md:text-lg text-black ">Uzbekistan Medi</h1>
+                                    <h1 className=" text-xl md:text-lg text-black ">Uzbekistan Medi</h1>
                                 </Link>
                                 <Link href="#">
                                     <h1 className=" text-xl md:text-lg text-black hover:text-[#45f6ff] cursor-pointer">Home</h1>

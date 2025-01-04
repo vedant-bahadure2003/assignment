@@ -2,6 +2,9 @@
 import React from "react";
 import { CiCircleMinus, CiCirclePlus } from "react-icons/ci";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import Minus from "../../public/Images/minus.png";
+import Plus from "../../public/Images/plus.png";
+import Image from "next/image";
 
 export default function Accordion({ question, answer, isOpen, onToggle }) {
   const [animationParent] = useAutoAnimate();
@@ -14,9 +17,9 @@ export default function Accordion({ question, answer, isOpen, onToggle }) {
       >
         <span>{question}</span>
         {isOpen ? (
-          <CiCircleMinus className="text-2xl" />
+          <Image src={Minus} alt="Minus" className="w-5 h-5" />
         ) : (
-          <CiCirclePlus className="text-2xl" />
+          <Image src={Plus} alt="Plus" className="w-5 h-5"/>
         )}
       </p>
       {isOpen && <p className="text-sm sm:text-base text-gray-400">{answer}</p>}
