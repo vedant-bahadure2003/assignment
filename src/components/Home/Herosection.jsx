@@ -14,7 +14,7 @@ const Herosection = () => {
         <div className="relative">
           <Image
             src={bgImage}
-            alt=""
+            alt="bgimg"
             loading="lazy"
             className="h-[100vh] w-full object-cover"
           />
@@ -26,7 +26,6 @@ const Herosection = () => {
             priority
           />
         </div>
-
         <div className="absolute top-[120px]  w-full h-[100vh]  xl:mt-0 z-10">
           <div className="w-[80%] mx-auto h-full flex flex-col items-stretch gap-2 md:gap-7">
             <div className="w-[90%] mx-auto h-auto flex items-center justify-center flex-col text-center">

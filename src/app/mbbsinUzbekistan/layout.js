@@ -5,6 +5,7 @@ import Testimonials from "@/components/Home/Testimonials";
 import Galary from "@/components/Home/Galary";
 import ContactUs from "@/components/Home/Contactus";
 import Univercity from "@/components/Home/Univercity";
+import Faq from "@/components/Home/Faq";
 
 export const metadata = {
   title: "MBBS in Uzbekistan",
@@ -16,6 +17,7 @@ export default function MbbsinUzbekistanLayout({ children }) {
     <>
         
         {children}
+        <Faq/>
         <Univercity/>
         <ContactUs/>
         <Galary/>

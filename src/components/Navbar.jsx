@@ -5,7 +5,7 @@ import { IoMdMenu } from "react-icons/io";
 
 const Navbar = () => {
     const [display, setDisplay] = useState(false);
-    console.log(display)
+    // console.log(display)
     return (
         <>
             {/* Navbar */}
