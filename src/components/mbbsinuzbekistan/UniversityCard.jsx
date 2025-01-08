@@ -2,10 +2,16 @@ import Image from "next/image";
 import React from "react";
 import UniversityImage from "../../../public/Images/universityimage.png";
 
-const UniversityCard = ({number}) => {
+const UniversityCard = ({ number }) => {
   return (
     <>
-      <div className="shadow-xl rounded-lg overflow-hidden mt-5 p-5 flex flex-col gap-2">
+      <div
+        className=" rounded-lg overflow-hidden mt-5 p-5 flex flex-col gap-2"
+        style={{
+          boxShadow:
+            "0px 4px 5px rgba(156, 163, 175, 0.6), 0px -0px 5px rgba(156, 163, 175, 0.6)",
+        }}
+      >
         <h3 className="text-base font-semibold">
           {number}. Andijan State Medical Institute
         </h3>
@@ -70,7 +76,9 @@ const UniversityCard = ({number}) => {
           </tbody>
         </table>
         <div className="flex justify-between gap-2 mt-2">
-          <button className="border border-black w-[132px] h-[40px] rounded-lg text-sm">Read More</button>
+          <button className="border border-black w-[132px] h-[40px] rounded-lg text-sm">
+            Read More
+          </button>
           <button className=" bg-[#16A8AF] w-[132px] h-[40px]  rounded-lg text-white text-sm md:text-lg ">
             Apply Now
           </button>

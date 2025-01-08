@@ -5,7 +5,7 @@ const Whystudy = () => {
   return (
     <>
       {/* why study in uzbekistan */}
-      <div className=" w-full lg:mt-20 flex flex-col gap-5 ">
+      <div className=" w-full lg:mt-20 flex flex-col gap-5 py-6 ">
         <h2 className="text-xl font-bold w-[90%] mx-auto text-[#0da9b0]">
           Why Study MBBS in Uzbekistan?
         </h2>

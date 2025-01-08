@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useRef } from "react";
 import Card from "./Card";
 import { IoIosArrowForward } from "react-icons/io";
@@ -15,10 +15,14 @@ const Univercity = () => {
   return (
     <>
       <div className="w-[90%] md:w-[80%] mx-auto mt-[71px] relative">
-        <h1 className="text-2xl md:text-4xl font-bold text-center">
-          Explore <span className="text-[#0da9b0] underline">Medical Universities</span> in Uzbekistan
+        <h1 className="text-2xl md:text-4xl font-bold w-[300px] ml-6 text-center py-2">
+          Explore{" "}
+          <span className="text-[#0da9b0] underline">Medical Universities</span>{" "}
+          in Uzbekistan
         </h1>
-        <p className="text-center mt-2 text-base">We are affiliated with these medical universities</p>
+        <p className="text-center mt-2 text-base w-[300px] ml-6">
+          We are affiliated with these medical universities
+        </p>
         <div className="w-full h-full mt-4 md:mt-10">
           <div
             className="w-full py-7 flex gap-5 overflow-x-auto scrollbar-hide"

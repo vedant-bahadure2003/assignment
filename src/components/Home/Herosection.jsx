@@ -29,7 +29,10 @@ const Herosection = () => {
         <div className="absolute top-[120px]  w-full h-[100vh]  xl:mt-0 z-10">
           <div className="w-[80%] mx-auto h-full flex flex-col items-stretch gap-2 md:gap-7">
             <div className="w-[90%] mx-auto h-auto flex items-center justify-center flex-col text-center">
-              <h1 id="headfont" className="text-4xl md:text-6xl lg:text-[64px] mt-3 font-semibold  text-white w-full">
+              <h1
+                id="headfont"
+                className="text-4xl md:text-6xl lg:text-[64px] mt-3 font-semibold  text-white w-full"
+              >
                 Study <span className="text-[#13e0eb]">MBBS</span> At{" "}
                 <span className="text-[#13e0eb]">Uzbekistan's</span>{" "}
                 <br className="hidden md:block" /> Leading Universities
@@ -118,10 +121,12 @@ const Herosection = () => {
         />
 
         <div className="absolute top-3 left-0 z-20 w-full h-full flex flex-col items-start justify-center gap-4 ">
-          <h1 className="w-[90%] mx-auto text-[32px] font-bold text-white mt-10">
-            Study MBBS at Uzbekistan's Leading Universities
+          <h1 className="w-[90%] mx-auto text-[36px] font-bold text-white mt-10">
+            Study <span className="text-[#13e0eb]">MBBS</span> At{" "}
+            <span className="text-[#13e0eb]">Uzbekistan's</span>{" "}
+            <br className="hidden md:block" /> Leading Universities
           </h1>
-          <button className="inline-block text-base py-1 px-3 ml-4 bg-teal-500 text-white rounded-md">
+          <button className="inline-block w-[147px] h-[47px] text-xl py-1 px-3 ml-4 bg-teal-500 text-white rounded-md">
             Apply Now
           </button>
           <div className=" bg-gradient-to-r from-white to-transparent w-full space-y-2 p-2">
@@ -160,36 +165,35 @@ const Herosection = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#FFFBEF] h-[110px] overflow-x-scroll overflow-y-hidden scrollbar-hide md:hidden">
-  <div className="flex gap-6 items-center justify-start w-[90%] mx-auto">
-    <div className="p-2 flex flex-col items-center justify-center">
-      <p className="font-bold text-[32px]">12+</p>
-      <p className="text-sm text-center leading-tight whitespace-normal">
-        Years of <br /> expertise
-      </p>
-    </div>
-    <div className="p-2 flex flex-col items-center justify-center">
-  <p className="font-bold text-[32px]">1500+</p>
-  <p className="text-sm text-center leading-tight w-[120px]">
-    Satisfied students <br /> counselled
-  </p>
-</div>
-<div className="p-2 flex flex-col items-center justify-center">
-  <p className="font-bold text-[32px]">10+</p>
-  <p className="text-sm text-center leading-tight w-[120px]">
-    Universities <br /> affiliated with us!
-  </p>
-</div>
+      <div className="bg-[#FFFBEF] h-[110px] overflow-x-scroll overflow-y-hidden scrollbar-hide md:hidden   ">
+        <div className="flex gap-6 items-center justify-start w-[90%] mx-auto ">
+          <div className="p-2 flex flex-col items-center justify-center">
+            <p className="font-bold text-[32px]">12+</p>
+            <p className="text-sm text-center leading-tight whitespace-normal">
+              Years of <br /> expertise
+            </p>
+          </div>
+          <div className="p-2 flex flex-col items-center justify-center">
+            <p className="font-bold text-[32px]">1500+</p>
+            <p className="text-sm text-center leading-tight w-[120px]">
+              Satisfied students <br /> counselled
+            </p>
+          </div>
+          <div className="p-2 flex flex-col items-center justify-center">
+            <p className="font-bold text-[32px]">10+</p>
+            <p className="text-sm text-center leading-tight w-[120px]">
+              Universities <br /> affiliated with us!
+            </p>
+          </div>
 
-    <div className="p-2 flex flex-col items-center justify-center">
-      <p className="font-bold text-[32px] text-center">100+</p>
-      <p className="text-sm text-center leading-tight whitespace-normal">
-        Vice Assistance
-      </p>
-    </div>
-  </div>
-</div>
-
+          <div className="p-2 flex flex-col items-center justify-center">
+            <p className="font-bold text-[32px] text-center">100+</p>
+            <p className="text-sm text-center leading-tight whitespace-normal">
+              Vice Assistance
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

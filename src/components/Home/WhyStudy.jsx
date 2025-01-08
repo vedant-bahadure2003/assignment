@@ -19,68 +19,68 @@ const WhyStudy = () => {
           <span className="text-[#0da9b0] underline">Uzbekistan?</span>
         </h2>
         <div className="text-sm md:text-lg flex flex-col md:mt-4 gap-2">
-            <div className="flex  gap-2">
-              <Image
-                src={rightsign}
-                alt="vector"
-                className="  h-[25px] w-[25px] mt-1"
-              />
+          <div className="flex  gap-2">
+            <Image
+              src={rightsign}
+              alt="vector"
+              className="  h-[25px] w-[25px] mt-1"
+            />
 
-              <h1 className="flex gap-2">
-                Direct Admissions Students will get direct admission to the
-                medical university of Uzbekistan{" "}
-              </h1>
-            </div>
-            <div className="  flex gap-2">
-              <Image
-                src={rightsign}
-                alt="vector"
-                className="text-xl  h-[25px] w-[25px] mt-1"
-              />
-
-              <h1 className="flex gap-2">
-                100% Safety Uzbekistan is the safest European country.
-              </h1>
-            </div>
-            <div className="  flex  gap-2">
-              <Image
-                src={rightsign}
-                alt="vector"
-                className="text-xl  h-[25px] w-[25px] mt-1"
-              />
-
-              <h1 className="flex gap-2">
-                Low tuition fee Medical universities in Uzbekistan Offered
-                low-cost education to Foreign students.
-              </h1>
-            </div>
-            <div className="  flex  gap-2">
-              <Image
-                src={rightsign}
-                alt="vector"
-                className="text-xl  h-[25px] w-[25px] mt-1"
-              />
-
-              <h1 className="flex gap-2">
-                Worldwide acceptance MBBS degree in Uzbekistan is accepted
-                worldwide.
-              </h1>
-            </div>
-            <div className="  flex gap-2">
-              <Image
-                src={rightsign}
-                alt="vector"
-                className="text-xl  h-[25px] w-[25px] mt-1"
-              />
-
-              <h1 className="flex gap-2">
-                Living & Accommodation Cost of living in Uzbekistan is low,
-                around 62 USD.
-              </h1>
-            </div>
+            <h1 className="flex gap-2">
+              Direct Admissions Students will get direct admission to the
+              medical university of Uzbekistan{" "}
+            </h1>
           </div>
+          <div className="  flex gap-2">
+            <Image
+              src={rightsign}
+              alt="vector"
+              className="text-xl  h-[25px] w-[25px] mt-1"
+            />
+
+            <h1 className="flex gap-2">
+              100% Safety Uzbekistan is the safest European country.
+            </h1>
+          </div>
+          <div className="  flex  gap-2">
+            <Image
+              src={rightsign}
+              alt="vector"
+              className="text-xl  h-[25px] w-[25px] mt-1"
+            />
+
+            <h1 className="flex gap-2">
+              Low tuition fee Medical universities in Uzbekistan Offered
+              low-cost education to Foreign students.
+            </h1>
+          </div>
+          <div className="  flex  gap-2">
+            <Image
+              src={rightsign}
+              alt="vector"
+              className="text-xl  h-[25px] w-[25px] mt-1"
+            />
+
+            <h1 className="flex gap-2">
+              Worldwide acceptance MBBS degree in Uzbekistan is accepted
+              worldwide.
+            </h1>
+          </div>
+          <div className="  flex gap-2">
+            <Image
+              src={rightsign}
+              alt="vector"
+              className="text-xl  h-[25px] w-[25px] mt-1"
+            />
+
+            <h1 className="flex gap-2">
+              Living & Accommodation Cost of living in Uzbekistan is low, around
+              62 USD.
+            </h1>
+          </div>
+        </div>
         <div className=" ">
-          <button className=" mt-6 bg-[#0da9b0] text-white py-2 px-6 rounded-lg shadow-lg hover:bg-[#479b9f] w-[132px] h-[40px] ">
+          <button className=" mt-6 ml-24 bg-[#0da9b0] text-white py-2 px-6 rounded-lg shadow-lg hover:bg-[#479b9f] w-[134px] h-[42px]  ">
             Read more
           </button>
         </div>

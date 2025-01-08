@@ -11,51 +11,88 @@ const Services = () => {
     <>
       <div className="bg-teal-50 md:mt-[50px]   ">
         <h1 className=" text-2xl md:text-4xl font-bold text-center pt-5">
-          Our Valuable <span className="text-[#16A8AF] underline">Services</span>
+          Our Valuable{" "}
+          <span className="text-[#16A8AF] underline">Services</span>
         </h1>
         <p className="text-center text-gray-600 text-base w-[80%] mx-auto mt-2">
           We are affiliated with these medical universities
         </p>
-        
+
         <div className="flex gap-5 flex-wrap w-[80%] mx-auto items-center justify-center mt-7 mb-5 md:mb-0">
-          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-2xl">
-            <Image src={admissionimg} alt="Admission" className="w-[50px] h-[50px] object-cover" />
-            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">Admission</h1>
+          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-md shadow-gray-400 border border-gray-300">
+            <Image
+              src={admissionimg}
+              alt="Admission"
+              className="w-[50px] h-[50px] object-cover"
+            />
+            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">
+              Admission
+            </h1>
             <p className="text-center text-sm">
               Get the guaranteed admission to top university.
             </p>
           </div>
-          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-2xl">
-            <Image src={visaimg} alt="visaimg" className="w-[50px] h-[50px] object-cover" />
-            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">Visa Process</h1>
+          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-md shadow-gray-400 border border-gray-300">
+            <Image
+              src={visaimg}
+              alt="visaimg"
+              className="w-[50px] h-[50px] object-cover"
+            />
+            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">
+              Visa Process
+            </h1>
             <p className="text-center text-sm">
               Fill the visa applications Followed by universities Guidelines.{" "}
             </p>
           </div>
-          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-2xl">
-            <Image src={accomadationimg} alt="Accomadation" className="w-[50px] h-[50px] object-cover"/>
-            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">Accommodation</h1>
+          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-md shadow-gray-400 border border-gray-300">
+            <Image
+              src={accomadationimg}
+              alt="Accomadation"
+              className="w-[50px] h-[50px] object-cover"
+            />
+            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">
+              Accommodation
+            </h1>
             <p className="text-center text-sm">
               Stay in the dormitories with a safe environment.{" "}
             </p>
           </div>
-          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-2xl">
-            <Image src={pickupimg} alt="Pickup"  className="w-[50px] h-[50px] object-cover"/>
-            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">Airport Pickup</h1>
+          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-md shadow-gray-400 border border-gray-300">
+            <Image
+              src={pickupimg}
+              alt="Pickup"
+              className="w-[50px] h-[50px] object-cover"
+            />
+            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">
+              Airport Pickup
+            </h1>
             <p className="text-center text-sm">
               Get picked up at airport By our representative.{" "}
             </p>
           </div>
-          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-2xl">
-            <Image src={documentImg} alt="Document" className="w-[50px] h-[50px] object-cover" />
-            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">Documentation</h1>
+          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-md shadow-gray-400 border border-gray-300">
+            <Image
+              src={documentImg}
+              alt="Document"
+              className="w-[50px] h-[50px] object-cover"
+            />
+            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">
+              Documentation
+            </h1>
             <p className="text-center text-sm">
               Verification of legalized <br /> documents.{" "}
             </p>
           </div>
-          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-2xl">
-            <Image src={counselingimg} alt="Conseling" className="w-[50px] h-[50px] object-cover"/>
-            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">Free Counseling</h1>
+          <div className="bg-white flex flex-col rounded-md gap-1 md:gap-2 items-center justify-center p-8 w-[320px] h-[172px] md:h-fit shadow-md shadow-gray-400 border border-gray-300">
+            <Image
+              src={counselingimg}
+              alt="Conseling"
+              className="w-[50px] h-[50px] object-cover"
+            />
+            <h1 className="text-xl md:text-2xl font-semibold text-[#005D61]">
+              Free Counseling
+            </h1>
             <p className="text-center text-sm">
               Get free counseled by our reputed experts.{" "}
             </p>
