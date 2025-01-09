@@ -40,6 +40,18 @@ const Univercity = () => {
             <div className="w-[270px] flex-shrink-0">
               <Card />
             </div>
+            <div className="w-[270px] flex-shrink-0">
+              <Card />
+            </div>{" "}
+            <div className="w-[270px] flex-shrink-0">
+              <Card />
+            </div>
+            <div className="w-[270px] flex-shrink-0">
+              <Card />
+            </div>
+            <div className="w-[270px] flex-shrink-0">
+              <Card />
+            </div>
           </div>
         </div>
 

@@ -5,6 +5,7 @@ import greentick from "../../../../../public/Images/greentick.png";
 import collegeImg from "../../../../../public/Images/collegeImg.png";
 import collegeBgImg from "../../../../../public/Images/collegeBgImg.png";
 import Star from "../../../../../public/Images/Star.png";
+import Planningform from "@/components/mbbsinuzbekistan/Planningform";
 
 import { BiRupee } from "react-icons/bi";
 import { MdLocationOn } from "react-icons/md";
@@ -210,6 +211,10 @@ const page = () => {
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <div className="mt-5">
+        <Planningform />
       </div>
     </>
   );
