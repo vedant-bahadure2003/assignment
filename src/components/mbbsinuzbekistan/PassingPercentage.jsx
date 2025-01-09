@@ -198,7 +198,7 @@ const PassingPercentage = () => {
       </div>
       {/* Ready to Take the First Step Toward Your Medical Career?*/}
       <div className="bg-[#FFF9EA] flex flex-col items-center justify-center  p-6 md:p-12  max-w-4xl mx-auto shadow-md shadow-gray-400 border border-blue-950 gap-5">
-        <Image src={rafiki} className="mx-auto w-40 h-32" />
+        <Image src={rafiki} alt="vector" className="mx-auto w-40 h-32" />
         <h1 className="text-[#005D61] text-center  w-[85%] mx-auto text-xl font-bold">
           Ready to Take the First Step Toward Your Medical Career?
         </h1>
@@ -226,7 +226,7 @@ const PassingPercentage = () => {
           Address Of Uzbekistan Embassy In India
         </h1>
         <div className="flex bg-[#FFF9EA] ">
-          <Image src={rafikiiii} className="mx-auto w-24 h-16" />
+          <Image src={rafikiiii} alt="vector" className="mx-auto w-24 h-16" />
           <p>
             EP-40, Dr. S. Radhakrishna Marg, Chanakyapuri, New Delhi, Delhi
             110021

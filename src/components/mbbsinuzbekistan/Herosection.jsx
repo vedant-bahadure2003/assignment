@@ -50,7 +50,11 @@ const Herosection = () => {
               <h2>XYZ Employee</h2>
             </div>
             <div>
-              <Image src={greentick} alt="" className="w-[23px] h-[23px] " />
+              <Image
+                src={greentick}
+                alt="greentick"
+                className="w-[23px] h-[23px] "
+              />
             </div>
           </div>
           <div className="text-justify text-sm py-5">
