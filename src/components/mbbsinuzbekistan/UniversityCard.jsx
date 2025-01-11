@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import UniversityImage from "../../../public/Images/universityimage.png";
+import Link from "next/link";
 
 const UniversityCard = ({ number }) => {
   return (
@@ -76,9 +77,11 @@ const UniversityCard = ({ number }) => {
           </tbody>
         </table>
         <div className="flex justify-between gap-2 mt-2">
-          <button className="border border-black w-[132px] h-[40px] rounded-lg text-sm">
-            Read More
-          </button>
+          <Link href="/mbbsinUzbekistan/clg/overview">
+            <button className="border border-black w-[132px] h-[40px] rounded-lg text-sm">
+              Read More
+            </button>
+          </Link>
           <button className=" bg-[#16A8AF] w-[132px] h-[40px]  rounded-lg text-white text-sm md:text-lg ">
             Apply Now
           </button>
