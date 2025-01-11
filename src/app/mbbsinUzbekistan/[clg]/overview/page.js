@@ -9,7 +9,6 @@ import FeesStructure from "@/components/mbbsinuzbekistan/colleges/FeesStructure"
 import Elegibility from "@/components/mbbsinuzbekistan/colleges/Elegibility";
 import Admission from "@/components/mbbsinuzbekistan/colleges/Admission";
 import DocumentReq from "@/components/mbbsinuzbekistan/colleges/DocumentReq";
-import Hero from "@/components/mbbsinuzbekistan/colleges/Hero";
 export default function page() {
   return (
     <>
@@ -23,7 +22,6 @@ export default function page() {
       <Elegibility />
       <Admission />
       <DocumentReq />
-      <Hero />
     </>
   );
 }
