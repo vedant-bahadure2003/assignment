@@ -8,8 +8,13 @@ import { FaBlog, FaUniversity, FaPhotoVideo, FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null); // State for active dropdown
 
-  // Menu items data with icons
+  const toggleDropdown = (index) => {
+    setActiveDropdown(activeDropdown === index ? null : index);
+  };
+
+  // Menu items data with icons and dropdowns
   const menuItems = [
     {
       label: "Home",
@@ -17,9 +22,15 @@ const Navbar = () => {
       icon: <IoMdHome className="text-xl text-black" />,
     },
     {
-      label: "About",
+      label: "About ▼",
       href: "#about",
       icon: <IoMdInformationCircle className="text-xl text-black" />,
+      dropdown: [
+        { label: "Our Story", href: "#our-story" },
+        { label: "Mission", href: "#mission" },
+        { label: "Team", href: "#team" },
+        { label: "Careers", href: "#careers" },
+      ],
     },
     {
       label: "MBBS in Uzbekistan",
@@ -27,9 +38,15 @@ const Navbar = () => {
       icon: <IoMdSchool className="text-xl text-black" />,
     },
     {
-      label: "Universities",
+      label: "Universities ▼",
       href: "#universities",
       icon: <FaUniversity className="text-xl text-black" />,
+      dropdown: [
+        { label: " Andijan State Medical Institute", href: "#university1" },
+        { label: " Andijan State Medical Institute", href: "#university2" },
+        { label: " Andijan State Medical Institute", href: "#university3" },
+        { label: " Andijan State Medical Institute", href: "#university4" },
+      ],
     },
     {
       label: "Blogs",
@@ -113,15 +130,18 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         <div
-          className={`fixed top-0 left-0 w-[69%] h-screen bg-gradient-to-r from-[#0da9b0] to-cyan-300 z-40 transform ${
+          className={`fixed top-0 left-0 w-full h-screen bg-white z-40 transform ${
             isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-          } transition-transform duration-700 ease-in-out xl:hidden`}
+          } transition-transform duration-500 ease-in-out xl:hidden`}
         >
           {/* Close Button */}
-          <div className="flex justify-between items-center px-4 py-5 border-b border-white">
+          <div className="flex justify-between items-center px-4 py-5 border-b border-gray-400">
             <h2 className="text-xl font-bold">Uzbekistan Medi</h2>
+            <button className="inline-block text-base py-1 px-3 bg-[#0da9b0] text-white rounded-md hover:bg-teal-600 transition">
+              Apply Now
+            </button>
             <IoMdClose
-              className="text-2xl text-black cursor-pointer"
+              className="text-3xl font-bold text-black cursor-pointer"
               onClick={toggleMobileMenu}
             />
           </div>
@@ -129,22 +149,42 @@ const Navbar = () => {
           {/* Menu Links */}
           <nav className="flex flex-col gap-8 mt-6 px-4">
             {menuItems.map((item, index) => (
-              <Link
-                key={index}
-                href={item.href}
-                className="flex items-center gap-4 text-lg font-semibold text-white hover:text-black transition duration-200 ease-in-out"
-                onClick={toggleMobileMenu} // Close menu on link click
-              >
-                {item.icon}
-                {item.label}
-              </Link>
+              <div key={index}>
+                <Link
+                  href={item.href}
+                  className="flex items-center gap-4 text-lg font-medium text-black hover:text-black transition duration-200 ease-in-out border-b border-gray-400 pb-4"
+                  onClick={() => {
+                    if (item.dropdown) {
+                      toggleDropdown(index);
+                    } else {
+                      setIsMobileMenuOpen(false); // Close menu on link click
+                    }
+                  }}
+                >
+                  {item.icon}
+                  {item.label}
+                </Link>
+                {item.dropdown && activeDropdown === index && (
+                  <div className="pl-8 mt-2 flex flex-col gap-2">
+                    {item.dropdown.map((subItem, subIndex) => (
+                      <Link
+                        key={subIndex}
+                        href={subItem.href}
+                        className="text-base border-b border-gray-400 text-black hover:text-black transition duration-200 ease-in-out"
+                      >
+                        {subItem.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </nav>
 
           {/* Logout Button */}
-          <div className="mt-[300px] py-4 px-4 pb-4 border-t border-white">
+          <div className="mt-[170px] py-4 px-4 pb-4 border-b border-gray-400">
             <button
-              className="flex items-center gap-2 text-lg font-semibold text-white hover:text-black transition duration-200 ease-in-out w-full"
+              className="flex items-center gap-2 text-lg font-semibold text-black hover:text-black transition duration-200 ease-in-out w-full"
               onClick={() => alert("Logged out successfully!")} // Replace with your logout logic
             >
               <FiLogOut className="text-2xl text-black" />
